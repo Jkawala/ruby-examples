@@ -1,0 +1,279 @@
+body,
+html {
+    background: url("assets/img/Casa_del_Arbol_de_Tarzan.png") no-repeat center center
+        fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+@font-face {
+    font-family: "Monkey Phonics";
+    src: url("assets/fonts/monkphon.ttf");
+}
+
+@font-face {
+    font-family: "Hanalei";
+    src: url("assets/fonts/Hanalei-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Hanaleii";
+    src: url("assets/fonts/COMICATE.TTF");
+}
+
+@font-face {
+    font-family: "Arcade";
+    src: url("assets/fonts/04B_30__.TTF");
+}
+
+@font-face {
+    font-family: "Score";
+    src: url("assets/fonts/04B_19__.TTF");
+}
+
+h1 {
+    text-align: center;
+    font-family: "Hanalei";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    font-size: 100px;
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 2px yellow;
+    text-shadow:5px 5px 5px black;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Hanaleii";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    font-size: 50px;
+    -webkit-text-stroke: 1px yellow;
+    text-shadow: 3px 3px 3px black;
+}
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        height: 0px;
+    }
+}
+.hidden {
+    animation: fade-out 1.5s;
+    opacity: 0;
+    height: 0;
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+}
+
+#submit {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.remove {
+    display: none;
+}
+
+#score-div {
+    column-count: 2;
+    border: 65px solid;
+    border-image: url("assets/img/clipart598102.png") 20% round;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.container-fadein {
+    opacity: 0;
+    animation: fade-in 3s;
+    opacity: 1;
+    width: 57.25%;
+    margin: auto;
+}
+
+.list-group-item {
+    background-color: rgba(255,255,255,0.0);
+    text-align: center;
+    font-family: "Arcade";
+    font-weight: normal;
+    font-style: normal;
+    list-style-image: url('assets/img/banana.png');
+    color: yellow;
+    /* -webkit-text-stroke: 1px white; */
+    font-size: 1.5vw;
+    opacity: 100%;
+    text-shadow: 3px 3px 3px black;
+    overflow: hidden;
+}
+
+form {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center; 
+}
+
+input {
+    text-align: center;
+}
+
+.grid {
+    width: 800px;
+    height: 850px;
+    background-color: rgb(113, 210, 255);
+    float: left;
+    font-size: 100px;
+    text-align: center;
+    border: 10px solid;
+    border-color: rgb(32, 112, 0);
+    outline: 1px solid black;
+    position: relative;
+    background: url("assets/img/26551299.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 2px 2px 2px 2px black;
+    font-family: "Score";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    opacity: 100%;
+    text-shadow: 4px 4px 4px black;
+}
+
+.doodler {
+    width: 60px;
+    height: 85px;
+    background-color: (32, 112, 0);
+    position: absolute;
+    background-image: url('assets/img/game-img/monkey.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.platform {
+    width: 125px;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    background: url("assets/img/60E01D0C-EAC6-4F16-AF6D-7C7149C717F3_4_5005_c.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+#user-panel {
+    display: inline-block;
+    position: absolute;
+    height: 850px;
+    width: 15.5vw;
+    background: url("assets/img/20580939.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+    border: 10px solid;
+    border-color: rgb(32, 112, 0);
+    outline: 1px solid black;
+    box-shadow: inset 2px 2px 2px 2px black;
+    text-shadow:5px 5px 5px black;
+}
+
+#logout-button {
+    position: fixed;
+    left: 35px;
+    bottom: 25px; 
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#game-title {
+    position: relative;
+    left: 50px;
+    top: 5px; 
+    font-family: "Hanaleii";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    font-size: 35px;
+    -webkit-text-stroke: 1px yellow;
+    text-shadow:5px 5px 5px black;
+}
+
+.display-3 {
+    font-size: 100px;
+    z-index: 9998!important;
+    font-family: "Hanalei";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    -webkit-text-stroke: 2px yellow;
+    margin-top: 350px;
+    text-align: center;
+    text-shadow:5px 5px 5px black;
+}
+
+.display-3:hover {
+    font-size:130px;
+}
+
+.top-five-heading {
+    background-color: rgba(255,255,255,0.0);
+    text-align: center;
+    font-family: "Arcade";
+    font-weight: normal;
+    font-style: normal;
+    color: yellow;
+    /* -webkit-text-stroke: 1px white; */
+    font-size: 1.5vw;
+    opacity: 100%;
+    text-shadow: 3px 3px 3px black;
+    overflow: hidden;
+}
